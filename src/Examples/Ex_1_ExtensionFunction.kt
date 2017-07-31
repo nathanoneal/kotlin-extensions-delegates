@@ -7,4 +7,3 @@ fun instructionsEx1 () {
 }
 
 //write extension function here
-fun Int.isEven() = this % 2 == 0

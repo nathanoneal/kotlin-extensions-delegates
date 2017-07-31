@@ -10,20 +10,12 @@ fun instructionsEx4 () {
 }
 
 class Name {
-    //delegate
-    private val accessCounter = AccessCounter("MyName")
     //properties
-    val nameValue: String by accessCounter
-    val nameValueAccessCount: Int
-        get() = accessCounter.count
+    val nameValue = "myName"
+    val nameValueAccessCount = 0
 }
 
-class  AccessCounter<out T>(initialValue: T) : ReadOnlyProperty<Name, T> {
-    var count = 0
-    val value = initialValue
-
-    override fun getValue(thisRef: Name, property: KProperty<*>): T {
-        count++
-        return value
-    }
-}
+//create delegate class here that implements ReadOnlyProperty
+//interface ReadOnlyProperty<in R, out T> {
+//    operator fun getValue(thisRef: R, property: KProperty<*>): T
+//}

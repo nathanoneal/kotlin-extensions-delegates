@@ -9,5 +9,3 @@ fun instructionsEx2 () {
 }
 
 //write extension property here
-val <T> List<T>.midpointIndex: Int
-    get() = (this.size/2) + 1

@@ -10,7 +10,7 @@ class Ex_2 {
         val list1 = listOf("one", "two", "three")
         val list2 = (1..10).toList()
 
-        assertEquals(2, list1.midpointIndex)
-        assertEquals(6, list2.midpointIndex)
+        //assertEquals(2, list1.midpointIndex)
+        //assertEquals(6, list2.midpointIndex)
     }
 }

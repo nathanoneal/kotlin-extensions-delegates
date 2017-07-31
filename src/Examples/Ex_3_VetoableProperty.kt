@@ -9,8 +9,6 @@ fun instructionsEx3 () {
 
 //make the password property vetoable if new contains old
 class User {
-    var password: String by Delegates.vetoable("default") {
-        prop, old, new -> !new.contains(old)
-    }
+    var password = "default"
 }
 
